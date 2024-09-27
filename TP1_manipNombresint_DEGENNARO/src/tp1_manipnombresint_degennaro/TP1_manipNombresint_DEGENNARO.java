@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author flavi
+ * @author flavio
  */
 public class TP1_manipNombresint_DEGENNARO {
 
@@ -35,9 +35,6 @@ public class TP1_manipNombresint_DEGENNARO {
         double quot;
         quot=var1%var2;
         System.out.println("Le résultat de la division entière de vos nombres est :" +quot);
-        
-        
-        // TODO code application logic here
-    }
     
-}
+    }
+}     

@@ -30,7 +30,7 @@ public class TP3_Heroic_Fantasy_DeGennaro {
         armes.add(baton2);
         int tailleDeArme= armes.size(); 
         for (int i=0; i<armes.size(); i++){
-            arme
+            
         }
         
         // TODO code application logic here

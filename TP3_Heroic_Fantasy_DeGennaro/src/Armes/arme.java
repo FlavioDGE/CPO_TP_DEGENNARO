@@ -8,14 +8,13 @@ package Armes;
  *
  * @author flavi
  */
-package Armes;
 /**
 * @author flavi
 */
-public abstract class Arme {
+public abstract class arme {
     private String nom;
     private int niveauAttaque;
-    public Arme(String nom, int niveauAttaque) {
+    public arme(String nom, int niveauAttaque) {
         this.nom = nom;
         this.niveauAttaque = Math.min(niveauAttaque, 100);
     }

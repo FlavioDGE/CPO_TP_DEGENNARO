@@ -2,14 +2,14 @@
  * Flavio De Gennaro
  */
 package Armes;
-import Armes.Arme;
+import Armes.arme;
 /**
 *
 * @author flavi
 */
-public class Baton extends Arme {
+public class baton extends arme {
     private int age;
-    public Baton(String nom, int niveauAttaque, int age) {
+    public baton(String nom, int niveauAttaque, int age) {
         super(nom, niveauAttaque);
         this.age = Math.min(age, 100);
     }

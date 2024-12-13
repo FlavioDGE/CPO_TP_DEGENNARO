@@ -4,7 +4,7 @@
  */
 package Personnages;
 import Armes.*;
-import tp3_heroic_fantasy_durac.etreVivant;
+import tp3_heroic_fantasy_degennaro.etreVivant;
 import Personnages.*;
 /**
  *
@@ -14,8 +14,8 @@ import java.util.ArrayList;
 public abstract class Personnage implements etreVivant {
     private String nom;
     private int niveauVie;
-    private ArrayList<Arme> inventaire = new ArrayList<>();
-    private Arme armeEnMain = null;
+    private ArrayList<arme> inventaire = new ArrayList<>();
+    private arme armeEnMain = null;
     private static int nbPersonnages = 0;
     public Personnage(String nom, int niveauVie) {
         this.nom = nom;
@@ -28,16 +28,16 @@ public abstract class Personnage implements etreVivant {
     public int getNiveauVie() {
         return niveauVie;
     }
-    public void ajouterArme(Arme arme) {
+    public void ajouterArme(arme arme) {
         if (inventaire.size() < 5) {
             inventaire.add(arme);
         }
     }
-    public Arme getArmeEnMain() {
+    public arme getArmeEnMain() {
         return armeEnMain;
     }
     public boolean equiperArme(String nomArme) {
-        for (Arme arme : inventaire) {
+        for (arme arme : inventaire) {
             if (arme.getNom().equals(nomArme)) {
                 armeEnMain = arme;
                 System.out.println(nom + " est maintenant équipé avec " + arme);

@@ -3,15 +3,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Personnages;
-import Armes.Baton;
+import Armes.baton;
 import Personnages.Personnage;
 /**
  *
  * @author flavi
  */
-public class Magicien extends Personnage {
+public class magicien extends Personnage {
     private boolean confirme;
-    public Magicien(String nom, int niveauVie, boolean confirme) {
+    public magicien(String nom, int niveauVie, boolean confirme) {
         super(nom, niveauVie);
         this.confirme = confirme;
     }
@@ -20,8 +20,8 @@ public class Magicien extends Personnage {
     }
     @Override
     public void attaquer(Personnage autre) {
-        if (getArmeEnMain() instanceof Baton) {
-            Baton baton = (Baton) getArmeEnMain();
+        if (getArmeEnMain() instanceof baton) {
+            baton baton = (baton) getArmeEnMain();
             int degats = getArmeEnMain().getNiveauAttaque() * baton.getAge();
             if (confirme) degats /= 2;
             autre.estAttaque(degats);

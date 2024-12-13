@@ -5,12 +5,14 @@
  */
 package tp3_heroic_fantasy_degennaro;
 import Armes.Epee;
-import Armes.Baton;
-import Armes.Arme;
+import Armes.baton;
+import Armes.arme;
 import java.util.ArrayList;
-import Personnages.Magicien;
-import Personnages.Guerrier;
+import Personnages.magicien;
+import Personnages.guerrier;
 import Personnages.Personnage;
+import Personnages.guerrier;
+import Personnages.magicien;
 /**
  *
  * @author flavi
@@ -24,10 +26,10 @@ public class Main {
     public static void main(String[] args){
         Epee excalibur = new Epee("Excalibur", 7, 5);
         Epee durandal = new Epee("Durandal", 4, 7);
-        Baton chene = new Baton("Chêne", 4, 5);
-        Baton charme = new Baton("Charme", 5, 6);
-        Magicien gandalf = new Magicien("Gandalf", 65, true);
-        Guerrier conan = new Guerrier("Conan", 78, false);
+        baton chene = new baton("Chêne", 4, 5);
+        baton charme = new baton("Charme", 5, 6);
+        magicien gandalf = new magicien("Gandalf", 65, true);
+        guerrier conan = new guerrier("Conan", 78, false);
         gandalf.ajouterArme(chene);
         gandalf.ajouterArme(charme);
         gandalf.ajouterArme(excalibur);

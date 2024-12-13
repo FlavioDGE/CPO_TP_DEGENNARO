@@ -9,9 +9,9 @@ import Personnages.Personnage;
  *
  * @author flavi
  */
-public class Guerrier extends Personnage {
+public class guerrier extends Personnage {
     private boolean aCheval;
-    public Guerrier(String nom, int niveauVie, boolean aCheval) {
+    public guerrier(String nom, int niveauVie, boolean aCheval) {
         super(nom, niveauVie);
         this.aCheval = aCheval;
     }
@@ -31,5 +31,4 @@ public class Guerrier extends Personnage {
             System.out.println(getNom() + " ne peut attaquer efficacement qu'avec une épée.");
         }
     }
-}
 }

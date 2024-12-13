@@ -2,12 +2,12 @@
  * Flavio De Gennaro
  */
 package Armes;
-import Armes.Arme;
+import Armes.arme;
 /**
 *
 * @author flavi 
 */
-public class Epee extends Arme {
+public class Epee extends arme {
     private int finesse;
     public Epee(String nom, int niveauAttaque, int finesse) {
         super(nom, niveauAttaque);
